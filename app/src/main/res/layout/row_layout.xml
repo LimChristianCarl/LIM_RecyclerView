@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/codeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code Name"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/versions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version"
+        android:layout_below="@+id/codeName"
+        android:layout_alignLeft="@+id/codeName"/>
+
+    <TextView
+        android:id="@+id/api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API"
+        android:layout_alignBaseline="@+id/versions"
+        android:layout_toRightOf="@id/versions"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:layout_below="@+id/versions"
+        android:layout_alignLeft="@+id/versions"/>
+</RelativeLayout>
